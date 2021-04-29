@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+  font-family: "Alegreya", serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+.navbar {
+  background-color:rgba(0,0,0,.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* right: 0; */
+  width: 100%;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  /* background-color: gray; */
+}
+
+.navbar ul {
+ 
+  float: right;
+  list-style-type: none;
+}
+
+.navbar img {
+  float: left;
+  width: 200px;
+ 
+}
+
+.navbar li {
+  /* display: inline-block; */
+
+  float: left;
+  padding: 20px;
+  text-transform: uppercase;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+/* home */
+.home {
+ 
+  /* border: 1px solid tomato; */
+  height: 100vh;
+  /* padding: 1px; */
+  /* overflow: auto; */
+  padding-top: 200px;
+  color: white;
+  background-image: url(images/bg.jpg);
+  background-size: 100% 100%;
+  background-position: bottom;
+}
+.home button {
+  padding: 15px 28px;
+  border: none;
+  color: #fff;
+}
+.home .btn1 {
+  background-color: #8e7754;
+}
+.home .btn2 {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.home h1 {
+  font-size: 76px;
+  margin: 20px 0;
+}
+.home-caption {
+  margin: auto;
+  /* width: 25%; */
+  text-align: center;
+  /* margin-top: 200px; */
+  /* padding-top: 200px; */
+}
+
+/* who we are  */
+.who {
+  /* background-color: tomato; */
+  overflow: auto;
+  padding: 50px 0;
+}
+.left-side {
+  /* background-color: teal; */
+  width: 50%;
+  float: left;
+}
+.right-side {
+  /* background-color: indigo; */
+  width: 50%;
+  float: right;
+  /* padding-top: 50px; */
+  margin-top: 50px;
+  padding-left: 50px;
+}
+.left-side img {
+  width: 90%;
+}
+
+.right-side img {
+  width: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.right-side span {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+/* our location */
+.our-location{
+    background-color: #f8f8f8;
+    overflow: hidden;
+    margin-top: 100px;
+    padding-top: 100px;
+}
+.our-location .location-caption{
+    width: 50%;
+  
+    float: left;
+    padding-top: 100px;
+    padding-right: 100px;
+}
+.our-location .location-img{
+    width: 50%;
+    background-color: teal;
+    float: right;
+}
+.our-location .location-img img{
+    width: 100%;
+}
+.our-location h2{
+    margin: 50px 0;
+}
+.our-location p{
+    margin: 20px 0;
+}
+
+
+/* our baking */
+
+.our-baking{
+  
+    overflow: hidden;
+    text-align: center;
+    margin-top: 100px;
+  
+}
+.our-baking img{
+    width: 100%;
+  
+}
+
+.our-baking .item{
+
+    width: 25%;
+    float: left;
+    padding: 20px;
+}
+/*
+
+media query
+
+
+
+media type
+
+print
+
+
+speech
+
+screen  all
+
+
+
+media feature
+
+<1000px
+
+*/
+
+@media all and (max-width:1200px) and (min-width:900px){
+    .our-baking .item{
+        width: 33.33%;
+    }
+
+}
+
+
+@media all and (max-width:900px) and (min-width:700px){
+    .our-baking .item{
+        width: 50%;
+    }
+
+
+}
+@media all and (max-width:700px){
+    .our-baking .item{
+        width:100%;
+    }
+    .left-side , .right-side{
+      width: 100%;
+    }
+
+
+    .home h1 {
+        font-size: 40px;
+       
+      }
+
+      .our-location .location-caption{
+          width: 100%;
+      }
+      .our-location .location-img{
+          width: 100%;
+      }
+    
+
+}
+
+
+/*
+
+
+bootstrap
+
+xlarge >1200px 
+
+large  (992px - 768px)
+
+
+medium  (768px - 576px) 
+
+small   567px
+
+
+
+*/
